@@ -95,24 +95,20 @@ body {
 .card {
   padding: 20px;
   border-radius: var(--radius);
-  border-width: 2px;
-  border-style: solid;
+  /* border-style: solid; */
   transition: box-shadow .2s;
 }
 
 .bg-border-aqua {
-  background: rgba(0, 255, 255, .2);
-  border-color: aqua;
+  background: rgba(0, 200, 255, 0.2);
 }
 
 .bg-border-violet {
   background: rgba(238, 130, 238, .2);
-  border-color: violet;
 }
 
 .bg-border-gold {
   background: rgba(255, 215, 0, .2);
-  border-color: gold;
 }
 
 .btn {
@@ -142,11 +138,9 @@ body {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
-
-  border: 2px solid #fff;
 }
 
-.table td:nth-child(odd) {
+.table td:nth-child(2) {
   background-color: rgba(238, 130, 238, .2);
 }
 
@@ -157,15 +151,11 @@ body {
 
 .list li {
   padding: 10px;
-  border-bottom: 2px solid #fff;
 }
 
-.list li:nth-child(even) {
-  background-color: rgba(0, 255, 255, .2);
-}
-
-.list li:first-child {
-  border-top: 2px solid #fff;
+.list li:nth-child(2) {
+  background-color: rgba(0, 200, 255, .2);
+  border-radius: var();
 }
 
 .form h2 {
