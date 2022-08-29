@@ -7,94 +7,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="nikita, cv, resume">
   <meta name="description" content="This is my resume!">
+  <link rel="stylesheet" href="./styles.css">
   <title>Nikita Resume</title>
 </head>
 
 <body>
-  <img src="./imgs/Me.jpg" alt="Nikita Kochunov" width="200">
 
-  <h1>Кочунов Никита</h1>
+  <div class="container">
 
-  <p>
-    Я изучаю курс для начинающих по <strong>HTML и CSS</strong>
-  </p>
+    <div class="info">
+      <img src="./Me.jpg" alt="Nikita Kochunov" class="info-img">
 
-  <p>
-    На самом деле я уже <em>разбираюсь</em> в этих технологиях, но решил <em>освежить</em> знания
-  </p>
+      <div class="info-text">
+        <h1>Кочунов Никита</h1>
 
-  <h4>Список социальных сетей</h4>
+        <p>
+          Я изучаю курс для начинающих по <span class="bold">HTML и CSS.</span>
+        </p>
 
-  <a target="_blank" href="https://github.com/nikitakochunov">Github</a>
-  |
-  <a target="_blank" href="https://vk.com/nikitakochunov">VK</a>
+        <p>
+          На самом деле я уже <span class="italic">знаком</span> с этими технологиями, но решил <span
+            class="italic">освежить</span> знания.
+        </p>
 
-  <h2>Мои хобби</h2>
+        <h4>Список социальных сетей</h4>
 
-  <ol>
-    <li>Workout</li>
-    <li>Выступления на сцене</li>
-    <li>Сон</li>
-  </ol>
+        <a class="git" target="_blank" href="https://github.com/nikitakochunov">Github</a>
+        |
+        <a class="vk" target="_blank" href="https://vk.com/nikitakochunov">VK</a>
+      </div>
 
-  <h2>Опыт работы</h2>
 
-  <table>
-    <thead>
-
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Агробалт</td>
-        <td>Разнорабочий</td>
-        <td>2016</td>
-      </tr>
-
-      <tr>
-        <td>МО Красненькая речка</td>
-        <td>Разнорабочий</td>
-        <td>2017</td>
-      </tr>
-
-      <tr>
-        <td>Самокат</td>
-        <td>Курьер</td>
-        <td>2021</td>
-      </tr>
-
-    </tbody>
-  </table>
-
-  <h2>Свяжитесь со мной</h2>
-
-  <form>
-
-    <div>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя">
     </div>
 
-    <div>
-      <label for="email">Ваш email:</label>
-      <input type="email" id="email" placeholder="Введите email">
+    <div class="card bg-border-aqua">
+
+      <h2>Мои хобби</h2>
+
+      <ol class="list">
+        <li>Workout</li>
+        <li>Выступления на сцене</li>
+        <li>Сон</li>
+      </ol>
+
     </div>
 
-    <div>
-      <label for="message">Ваше имя:</label>
-      <br>
-      <textarea id="message" cols="25" rows="5" placeholder="Ваше сообщение..."></textarea>
+    <div class="card bg-border-violet">
+
+      <h2>Опыт работы</h2>
+
+      <table class="table">
+
+        <tbody>
+          <tr>
+            <td>Агробалт</td>
+            <td>Разнорабочий</td>
+            <td>2016</td>
+          </tr>
+
+          <tr>
+            <td>МО Красненькая речка</td>
+            <td>Разнорабочий</td>
+            <td>2017</td>
+          </tr>
+
+          <tr>
+            <td>Самокат</td>
+            <td>Курьер</td>
+            <td>2021</td>
+          </tr>
+
+        </tbody>
+      </table>
+
     </div>
 
-    <button type="submit">Отправить!</button>
+    <div class="card bg-border-gold">
 
-  </form>
+
+
+      <form class="form">
+        <h2>Свяжитесь со мной</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше имя:</label>
+          <textarea id="message" cols="25" rows="5" placeholder="Ваше сообщение..."></textarea>
+        </div>
+
+        <button class="btn" type="submit">Отправить!</button>
+
+      </form>
+
+    </div>
+
+  </div>
 
 </body>
 
